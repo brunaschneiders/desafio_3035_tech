@@ -1,0 +1,11 @@
+{
+  "name": "desafio_3035_tech",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/brunaschneiders/desafio_3035_tech.git",
+  "author": "brunaschneiders <bruna.schneiders@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}

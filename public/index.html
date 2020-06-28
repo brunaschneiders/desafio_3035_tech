@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio 3035 Tech</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/cabecalho.css">
+        <link rel="stylesheet" href="../style/conteudo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">     
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body class= "desafio">
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+                <a class="nav-item nav-link" href="#formata-data">Data</a>
+                <a class="nav-item nav-link" href="#verifica-palindromo">Palíndromos</a>
+                <a class="nav-item nav-link" href="#verifica-vogais">Vogais</a>
+                <a class="nav-item nav-link" href="#verifica-repeticao-palavras">Palavras repetidas</a>
+                <a class="nav-item nav-link" href="#calcula-media">Média</a>
+            </div>
+            </div>
+        </nav>
+        <header class="cabecalho">
+            <div class="titulo">
+                Desafio <br> 3035Tech
+            </div>
+            <div class="botoes-navegacao">
+                <a href="#formata-data"><button type="button" class="btn btn-block">Formatar data</button></a>
+                <a href="#verifica-palindromo"><button type="button" class="btn btn-block">Verificar palindromia</button></a>
+                <a href="#verifica-vogais"><button type="button" class="btn btn-block">Verificar vogais</button></a>
+                <a href="#verifica-repeticao-palavras"><button type="button" class="btn btn-block">Verificar repetição de palavras</button></a>
+                <a href="#calcula-media"><button type="button" class="btn btn-block">Calcular média</button></a>
+            </div>
+        </header>
+        <main class="conteudo">
+            <section id="formata-data">
+                <div class="titulo">
+                    Formatação de data
+                </div>
+                <div class="entrada-dados">
+                    <label class="instrucao">Informe uma data: <input type="text" class="datepicker" id="data-usuario" placeholder="MM/DD/YYYY"></label>
+                    <button id="btn-formatar-data-usuario">Formatar data</button>
+                </div>
+                <div class="saida-dados">
+                    <div id="resultado-data-formatada"></div>
+                </div>
+            </section>
+            <section id="verifica-palindromo"></section>
+            <section id="verifica-vogais">
+                <div class="titulo">
+                    Verificação de vogais
+                </div>
+                <div class="entrada-dados">
+                    <label class="instrucao">Informe uma palavra: <input type="text" id="palavra-usuario"></label>
+                    <button id="btn-verificar-vogais">Verificar vogais</button>
+                </div>
+                <div class="saida-dados">
+                    <div id="resultado-vogais-palavra"></div>
+                </div>
+            </section>
+            <section id="verifica-repeticao-palavras"></section>
+            <section id="calcula-media">
+                <div class="titulo">
+                    Média aritmética
+                </div>
+                <div class="entrada-dados">
+                    <div class="instrucao">
+                        Para efetuar o cálculo de média aritmética, insira 15 números abaixo.
+                    </div>
+                    <div class="incluir-numero">
+                        <input type="number" id="number"> 
+                        <button id="btn-incluir-numero">Incluir número</button>
+                    </div>
+                    <div id="informativo-media"></div>
+                    <button id="btn-calcular-media">Calcular</button>
+                </div>
+                <div class="saida-dados">
+                    <div id="numeros-envolvidos"></div>
+                    <div id="resultado-media"></div>
+                </div>
+            </section>
+        </main>
+        <script src="../src/formataData.js"></script>
+        <script src="../src/verificaVogais.js"></script>
+        <script src="../src/calculaMedia.js"></script>
+    </body>  
+</html>
