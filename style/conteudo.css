@@ -54,6 +54,53 @@
   margin: auto;
 }
 
+#verifica-palindromo {
+  background-color: #D4D4D4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 10vh 15vh (37.5vh)[2];
+      grid-template-rows: 10vh 15vh repeat(2, 37.5vh);
+}
+
+#verifica-palindromo .entrada-dados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+#verifica-palindromo .entrada-dados input {
+  width: 100%;
+}
+
+#verifica-palindromo .saida-dados {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 4;
+  grid-row: 4 / 4;
+  margin: auto;
+}
+
 #verifica-vogais {
   display: -ms-grid;
   display: grid;
@@ -177,6 +224,7 @@
 }
 
 #formata-data .titulo,
+#verifica-palindromo .titulo,
 #verifica-vogais .titulo,
 #calcula-media .titulo {
   display: -webkit-box;
@@ -195,6 +243,7 @@
 }
 
 #formata-data .entrada-dados input,
+#verifica-palindromo .entrada-dados input,
 #verifica-vogais .entrada-dados input,
 #calcula-media .entrada-dados input {
   border: 2px solid #020202;
@@ -204,6 +253,7 @@
 }
 
 #formata-data .entrada-dados input:hover,
+#verifica-palindromo .entrada-dados input:hover,
 #verifica-vogais .entrada-dados input:hover,
 #calcula-media .entrada-dados input:hover {
   -webkit-box-shadow: 0px 0px 5px 2px #020202;
@@ -211,6 +261,7 @@
 }
 
 #formata-data .entrada-dados button,
+#verifica-palindromo .entrada-dados button,
 #verifica-vogais .entrada-dados button,
 #calcula-media .entrada-dados button {
   background-color: #020202;
@@ -220,6 +271,7 @@
 }
 
 #formata-data .entrada-dados button:hover,
+#verifica-palindromo .entrada-dados button:hover,
 #verifica-vogais .entrada-dados button:hover,
 #calcula-media .entrada-dados button:hover {
   text-shadow: 0px 0px 10px #D0D0D0;
@@ -228,6 +280,7 @@
 }
 
 #formata-data .saida-dados #resultado-data-formatada,
+#verifica-palindromo .saida-dados #resultado-palindromia,
 #verifica-vogais .saida-dados #resultado-vogais-palavra,
 #calcula-media .saida-dados #resultado-media {
   font-size: 30px;

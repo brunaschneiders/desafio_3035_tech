@@ -19,7 +19,6 @@ function formataDataUsuario(){
     const dataUsuarioFormatada = formataData(dataUsuario);
 
     imprimeResultadoData(dataUsuarioFormatada);
-    console.log(dataUsuarioFormatada)
 }
 
 function imprimeResultadoData(resultado){

@@ -11,7 +11,6 @@ function verificaVogais(palavra){
            vogais += letras[i];
         }
     }
-
     return vogais
 };
 
@@ -21,10 +20,9 @@ function verificaPalavraUsuario(){
 
     const vogaisPalavraUsuario = verificaVogais(palavraUsuario);
 
-    imprimeResultado(vogaisPalavraUsuario);
+    imprimeResultadoVogais(vogaisPalavraUsuario);
 }
 
-function imprimeResultado(resultado){
-
+function imprimeResultadoVogais(resultado){
     document.getElementById('resultado-vogais-palavra').innerHTML = `Resultado: ${resultado}`;
 }
