@@ -7,84 +7,35 @@
     grid-template-rows: repeat(5, 100vh);
 }
 
-#formata-data{
+#formata-data,
+#verifica-palindromo,
+#verifica-vogais,
+#verifica-repeticao-palavras{
     display: grid;
-    grid-column: 1 / 1;
-    grid-row: 1 / 2;
     grid-template-columns: 100%;
     grid-template-rows: 10vh 15vh repeat(2, 37.5vh);
 }
 
-#formata-data .entrada-dados{
-    display: flex;
-    flex-direction: column;
+#formata-data{
     grid-column: 1 / 1;
-    grid-row: 3 / 4;
-    justify-content: space-around;
-    margin: 0 auto;
-    text-align: center;
-    width: 50%;
-}
-
-#formata-data .saida-dados{
-    grid-column: 1 / 1;
-    grid-row: 4 / 4;
-    margin: auto;
+    grid-row: 1 / 2;
 }
 
 #verifica-palindromo{
     background-color: #D4D4D4;
-    display: grid;
     grid-column: 1 / 1;
     grid-row: 2 / 3;
-    grid-template-columns: 100%;
-    grid-template-rows: 10vh 15vh repeat(2, 37.5vh);
-}
-
-#verifica-palindromo .entrada-dados{
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / 1;
-    grid-row: 3 / 4;
-    justify-content: space-around;
-    margin: 0 auto;
-    text-align: center;
-    width: 50%;
-}
-
-#verifica-palindromo .entrada-dados input{
-    width: 100%;
-}
-
-#verifica-palindromo .saida-dados{
-    grid-column: 1 / 1;
-    grid-row: 4 / 4;
-    margin: auto;
 }
 
 #verifica-vogais{
-    display: grid;
     grid-column: 1 / 1;
     grid-row: 3 / 4;
-    grid-template-columns: 100%;
-    grid-template-rows: 10vh 15vh repeat(2, 37.5vh);
 }
 
-#verifica-vogais .entrada-dados{
-    display: flex;
-    flex-direction: column;
+#verifica-repeticao-palavras{
+    background-color: #D4D4D4;
     grid-column: 1 / 1;
-    grid-row: 3 / 4;
-    justify-content: space-around;
-    margin: 0 auto;
-    text-align: center;
-    width: 50%;
-}
-
-#verifica-vogais .saida-dados{
-    grid-column: 1 / 1;
-    grid-row: 4 / 4;
-    margin: auto;
+    grid-row: 4 / 5;
 }
 
 #calcula-media{
@@ -95,6 +46,34 @@
     grid-template-rows: 10vh 15vh 75vh;
 }
 
+#formata-data .titulo,
+#verifica-palindromo .titulo,
+#verifica-vogais .titulo,
+#verifica-repeticao-palavras .titulo,
+#calcula-media .titulo{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    margin: auto;
+    text-align: center;
+}
+
+#formata-data .entrada-dados,
+#verifica-palindromo .entrada-dados,
+#verifica-vogais .entrada-dados,
+#verifica-repeticao-palavras .entrada-dados{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
 #calcula-media .entrada-dados{
     display: flex;
     flex-direction: column;
@@ -103,6 +82,59 @@
     justify-content: space-around;
     padding: 5%;
     text-align: center;
+}
+
+#formata-data .entrada-dados input,
+#verifica-palindromo .entrada-dados input,
+#verifica-vogais .entrada-dados input,
+#verifica-repeticao-palavras input,
+#calcula-media .entrada-dados input{
+    border: 2px solid #020202;
+    font-size: 15px;
+    height: 5vh;
+    text-align: center;
+}
+
+#verifica-palindromo .entrada-dados input,
+#verifica-repeticao-palavras .entrada-dados input{
+    width: 100%;
+}
+
+#formata-data .entrada-dados input:hover,
+#verifica-palindromo .entrada-dados input:hover,
+#verifica-vogais .entrada-dados input:hover,
+#verifica-repeticao-palavras .entrada-dados input:hover,
+#calcula-media .entrada-dados input:hover{
+    box-shadow: 0px 0px 5px 2px #020202;
+}
+
+#formata-data .entrada-dados button,
+#verifica-palindromo .entrada-dados button,
+#verifica-vogais .entrada-dados button,
+#verifica-repeticao-palavras .entrada-dados button,
+#calcula-media .entrada-dados button{
+    background-color: #020202;
+    border: none;
+    color: #D0D0D0;
+    height: 5vh;
+}
+
+#formata-data .entrada-dados button:hover,
+#verifica-palindromo .entrada-dados button:hover,
+#verifica-vogais .entrada-dados button:hover,
+#verifica-repeticao-palavras button:hover,
+#calcula-media .entrada-dados button:hover{
+    text-shadow: 0px 0px 10px #D0D0D0;
+    box-shadow: 0px 0px 5px 2px #020202;
+}
+
+#formata-data .saida-dados,
+#verifica-palindromo .saida-dados,
+#verifica-vogais .saida-dados,
+#verifica-repeticao-palavras .saida-dados{
+    margin: auto;
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
 }
 
 #calcula-media .saida-dados{
@@ -135,57 +167,10 @@
     width: 15%;
 }
 
-#formata-data .titulo,
-#verifica-palindromo .titulo,
-#verifica-vogais .titulo,
-#calcula-media .titulo{
-    display: flex;
-    font-size: 50px;
-    font-weight: bold;
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-    margin: auto;
-    text-align: center;
-}
-
-#formata-data .entrada-dados input,
-#verifica-palindromo .entrada-dados input,
-#verifica-vogais .entrada-dados input,
-#calcula-media .entrada-dados input{
-    border: 2px solid #020202;
-    font-size: 15px;
-    height: 5vh;
-    text-align: center;
-}
-
-#formata-data .entrada-dados input:hover,
-#verifica-palindromo .entrada-dados input:hover,
-#verifica-vogais .entrada-dados input:hover,
-#calcula-media .entrada-dados input:hover{
-    box-shadow: 0px 0px 5px 2px #020202;
-}
-
-#formata-data .entrada-dados button,
-#verifica-palindromo .entrada-dados button,
-#verifica-vogais .entrada-dados button,
-#calcula-media .entrada-dados button{
-    background-color: #020202;
-    border: none;
-    color: #D0D0D0;
-    height: 5vh;
-}
-
-#formata-data .entrada-dados button:hover,
-#verifica-palindromo .entrada-dados button:hover,
-#verifica-vogais .entrada-dados button:hover,
-#calcula-media .entrada-dados button:hover{
-    text-shadow: 0px 0px 10px #D0D0D0;
-    box-shadow: 0px 0px 5px 2px #020202;
-}
-
 #formata-data .saida-dados #resultado-data-formatada,
 #verifica-palindromo .saida-dados #resultado-palindromia,
 #verifica-vogais .saida-dados #resultado-vogais-palavra,
+#verifica-repeticao-palavras .saida-dados #resultado-repeticao-palavras,
 #calcula-media .saida-dados #resultado-media{
     font-size: 30px;
     font-weight: bold;
