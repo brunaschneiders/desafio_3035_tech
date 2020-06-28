@@ -35,10 +35,7 @@ function verificaPalindromoUsuario(){
         imprimeResultadoPalindromia("É um palíndromo");
     }else{
         imprimeResultadoPalindromia("Não é um palíndromo");
-    }
-
-    console.log(resultado)
-    
+    }  
 }
 
 function imprimeResultadoPalindromia(resultado){
