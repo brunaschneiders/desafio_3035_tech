@@ -1,7 +1,7 @@
 document.getElementById('btn-verificar-repeticao-palavras').onclick = contaPalavrasFraseUsuario;
 
 function contaPalavrasFrase(frase){
-    let palavras = frase.split(" ")
+    let palavras = frase.split(" ");
     let fraseContada = {};
     
 
@@ -24,7 +24,7 @@ function contaPalavrasFraseUsuario(){
         const palavras = Object.keys(fraseContada);
 
         for (let i = 0; i<palavras.length; i++){
-            let palavra = palavras[i]
+            let palavra = palavras[i];
             imprimeResultadoPalavrasRepetidas(palavra, fraseContada[palavra]);
         }
 

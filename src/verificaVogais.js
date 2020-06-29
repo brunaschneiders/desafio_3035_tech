@@ -6,14 +6,14 @@ function verificaVogais(palavra){
 
     let vogais = "";
 
-    const vogaisExistentes = ['a','e','i','o','u','A','E','I','O','U']
+    const vogaisExistentes = ['a','e','i','o','u','A','E','I','O','U'];
 
     for(i=0; i<letras.length; i++){
         if (vogaisExistentes.includes(letras[i])){
            vogais += letras[i];
         }
     }
-    return vogais
+    return vogais;
 };
 
 function verificaPalavraUsuario(){

@@ -11,7 +11,7 @@ function incluiNumero(){
 
     if(numeros.length<quantMaxNumerosArray){
         if(isNaN(numero)){
-            document.getElementById('informativo-media').innerHTML = `Insira um número para incluir no cálculo.`
+            document.getElementById('informativo-media').innerHTML = `Insira um número para incluir no cálculo.`;
         }else{
             document.getElementById('informativo-media').innerHTML = ``;
 
