@@ -13,7 +13,7 @@ function palindromo(string){
 
     const letras = stringNormalizada.split("");
 
-    let stringInvertida = ""
+    let stringInvertida = "";
 
     for(i=(letras.length-1); i>=0; i--){
         stringInvertida += letras[i];
