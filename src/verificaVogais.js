@@ -6,8 +6,10 @@ function verificaVogais(palavra){
 
     let vogais = "";
 
+    const vogaisExistentes = ['a','e','i','o','u','A','E','I','O','U']
+
     for(i=0; i<letras.length; i++){
-        if (letras[i] === 'a' || letras[i] == 'e' || letras[i] == 'i' || letras[i] == 'o' || letras[i] == 'u' ||letras[i] === 'A' || letras[i] === 'E' || letras[i] === 'I' || letras[i] === 'O' || letras[i] === 'U'){
+        if (vogaisExistentes.includes(letras[i])){
            vogais += letras[i];
         }
     }
